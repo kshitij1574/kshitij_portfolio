@@ -13,10 +13,10 @@ export default function Contact() {
           viewport={{ once: true, margin: "-50px" }}
         >
           <h2 className="mb-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
-            Let's Connect.
+            Let&apos;s Connect.
           </h2>
           <p className="mb-14 text-lg text-gray-400">
-            Whether you have a question, a project idea, or just want to say hi, feel free to reach out. I'll try my best to get back to you!
+            Whether you have a question, a project idea, or just want to say hi, feel free to reach out. I&apos;ll try my best to get back to you!
           </p>
         </motion.div>
 
