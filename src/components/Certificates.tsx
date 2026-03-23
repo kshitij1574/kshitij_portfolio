@@ -12,6 +12,12 @@ const certificates = [
     image: "/certificates/data-science.png.png",
   },
   {
+    title: "Data Analytics Job Simulation",
+    issuer: "Deloitte",
+    date: "March 2026",
+    image: "/certificates/deloitte-data-analytics.png",
+  },
+  {
     title: "GenAI Powered Data Analytics Job Simulation",
     issuer: "Forage / Tata",
     date: "June 2025",
@@ -61,10 +67,10 @@ export default function Certificates() {
             >
               {/* Subtle hover gradient */}
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              
+
               {/* Image Container with 4:3 Aspect Ratio standard for certs */}
               <div className="relative mb-6 aspect-[4/3] w-full overflow-hidden rounded-xl bg-[#1a1a1a] flex items-center justify-center border border-white/5">
-                
+
                 {/* Fallback Text if image isn't loaded */}
                 <div className="absolute z-0 flex flex-col items-center justify-center text-center p-4">
                   <span className="text-gray-600 mb-2">Image Missing</span>
@@ -76,7 +82,7 @@ export default function Certificates() {
                 {/* Actual Certificate Image */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={cert.image} 
+                  src={cert.image}
                   alt={cert.title}
                   className="relative z-10 h-full w-full object-contain p-2 transition-transform duration-700 group-hover:scale-[1.03]"
                   onError={(e) => {
@@ -111,9 +117,9 @@ export default function Certificates() {
         {selectedCert && (
           <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src={selectedCert.image} 
-              alt={selectedCert.title} 
+            <img
+              src={selectedCert.image}
+              alt={selectedCert.title}
               className="w-auto h-auto max-h-[75vh] object-contain rounded-lg shadow-2xl"
               onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
             />
