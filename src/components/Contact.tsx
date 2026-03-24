@@ -20,7 +20,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -46,7 +46,7 @@ export default function Contact() {
           </a>
 
           {/* GitHub */}
-          <a href="https://github.com/KshitijKamble" target="_blank" rel="noreferrer" className="group flex flex-col justify-center rounded-2xl border border-white/5 bg-white/5 p-8 backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20 hover:-translate-y-1">
+          <a href="https://github.com/kshitij1574" target="_blank" rel="noreferrer" className="group flex flex-col justify-center rounded-2xl border border-white/5 bg-white/5 p-8 backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20 hover:-translate-y-1">
             <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-2">GitHub</span>
             <span className="text-xl font-medium text-gray-100 group-hover:text-blue-400 transition-colors">github.com/KshitijKamble</span>
           </a>

@@ -22,7 +22,7 @@ const projects = [
     title: "Blood Bank Management System",
     category: "Software Development",
     shortDescription: "System to manage donor registration and track blood stock levels.",
-    image: "/projects/blood-bank.png", 
+    image: "/projects/blood-bank.png",
     details: [
       "Manages donor registration and hospital blood requests.",
       "Tracks blood stock levels and emergency alerts.",
@@ -33,7 +33,7 @@ const projects = [
     title: "Password Management System",
     category: "Information Security",
     shortDescription: "Secure password management system with encrypted storage.",
-    image: "/projects/password-manager.png", 
+    image: "/projects/password-manager.png",
     details: [
       "Designed secure password management system with encrypted storage.",
       "Implemented robust authentication and secure hashing techniques.",
@@ -72,7 +72,7 @@ export default function Projects() {
               className="group cursor-pointer relative overflow-hidden flex flex-col rounded-2xl border border-white/5 bg-white/5 p-6 backdrop-blur-xl transition-all hover:border-white/20 hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5"
             >
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-b from-white/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              
+
               <div className="relative mb-6 aspect-video overflow-hidden rounded-xl bg-[#1a1a1a]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -94,11 +94,11 @@ export default function Projects() {
                 <p className="text-gray-400 text-sm mb-4">
                   {project.shortDescription}
                 </p>
-                
+
                 <div className="mt-auto">
-                   <p className="text-xs font-medium text-blue-500 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                     View Details &rarr;
-                   </p>
+                  <p className="text-xs font-medium text-blue-500 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                    View Details &rarr;
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -111,13 +111,13 @@ export default function Projects() {
           <div className="p-4 sm:p-8 flex flex-col md:flex-row gap-8 items-start">
             <div className="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg border border-white/5 bg-[#1a1a1a] flex items-center justify-center relative aspect-video">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src={selectedProject.image} 
-                alt={selectedProject.title} 
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
                 className="w-full h-full object-cover absolute inset-0"
                 onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0'; }}
               />
-               <span className="text-gray-500 text-xs">Image Placeholder</span>
+              <span className="text-gray-500 text-xs">Image Placeholder</span>
             </div>
             <div className="w-full md:w-1/2 flex flex-col">
               <span className="text-xs font-semibold tracking-widest text-blue-400 uppercase mb-2">
@@ -126,7 +126,7 @@ export default function Projects() {
               <h3 className="text-3xl font-bold text-white mb-6 leading-tight">
                 {selectedProject.title}
               </h3>
-              
+
               <ul className="space-y-4 text-gray-300 text-sm sm:text-base">
                 {selectedProject.details.map((detail, idx) => (
                   <li key={idx} className="flex gap-3">

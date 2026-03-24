@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const skills = [
   { category: "Programming", items: ["Python", "SQL", "C++", "HTML", "CSS"] },
-  { category: "Data Libraries", items: ["Pandas", "NumPy", "Scikit-learn", "OpenCV"] },
-  { category: "ML Techniques", items: ["Classification", "Regression", "Feature Engineering"] },
+  { category: "Data Libraries", items: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "TensorFlow", "Keras", "OpenCV"] },
+  { category: "ML Techniques", items: ["Classification", "Regression", "Feature Engineering", "Clustering", "Neural Networks"] },
   { category: "Tools & Database", items: ["Git", "GitHub", "VS Code", "MySQL", "Jupyter Notebook"] },
   { category: "Behavioral", items: ["Critical Thinking", "Problem Solving", "Team Player", "Adaptability", "Continuous Learner"] },
 ];
@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section className="relative z-20 bg-[#121212] px-6 py-24 md:px-24">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16">
-        
+
         {/* Summary Side */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -27,7 +27,7 @@ export default function About() {
           </h2>
           <div className="text-lg text-gray-400 leading-relaxed space-y-6">
             <p>
-              I am a <strong className="text-gray-200">Data Science enthusiast</strong> with a strong foundation in Machine Learning, Statistics, and Data Structures & Algorithms. 
+              I am a <strong className="text-gray-200">Data Science enthusiast</strong> with a strong foundation in Machine Learning, Statistics, and Data Structures & Algorithms.
             </p>
             <p>
               Experienced in building end-to-end ML systems, including Face Emotion Recognition and data-driven management systems. I am highly skilled in Python, SQL, and data preprocessing with hands-on project experience.
@@ -57,8 +57,8 @@ export default function About() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skillGroup.items.map((item, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-sm text-gray-300 backdrop-blur-sm cursor-default hover:bg-white/10 hover:text-white transition-colors"
                     >
                       {item}
