@@ -40,7 +40,7 @@ export default function Contact() {
           </a>
 
           {/* LinkedIn */}
-          <a href="https://linkedin.com/in/kshitij-kamble" target="_blank" rel="noreferrer" className="group flex flex-col justify-center rounded-2xl border border-white/5 bg-white/5 p-8 backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20 hover:-translate-y-1">
+          <a href="https://www.linkedin.com/in/kshitij-kamble-26229a214/" target="_blank" rel="noreferrer" className="group flex flex-col justify-center rounded-2xl border border-white/5 bg-white/5 p-8 backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20 hover:-translate-y-1">
             <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-2">LinkedIn</span>
             <span className="text-xl font-medium text-gray-100 group-hover:text-blue-400 transition-colors">linkedin.com/in/kshitij-kamble</span>
           </a>
